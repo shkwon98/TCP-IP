@@ -1,3 +1,3 @@
 #pragma once
 
-void errorHandling(char* errmsg);
+void errorHandling(char *errmsg);

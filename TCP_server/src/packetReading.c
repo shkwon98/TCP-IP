@@ -3,11 +3,11 @@
 #include <unistd.h>
 #include "packetReading.h"
 
-void readString(int socketFD, char* pBuffer, int length) {
-
+void readString(int socketFD, char *pBuffer, int length)
+{
     memset(pBuffer, 0, BUF_SIZE);
 
-    read(socketFD, (void*)pBuffer, length);
+    read(socketFD, (void *)pBuffer, length);
     printf("message string: %s\n", pBuffer);
 }
 
