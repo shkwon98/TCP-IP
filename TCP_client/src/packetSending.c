@@ -5,9 +5,9 @@
 #include <winsock2.h>
 #include "packetSending.h"
 
-void sendString(SOCKET socketFD, char *buffer)
+void sendString(SOCKET socketFD, char* buffer)
 {
-    PACKET_STR *pMsg = (PACKET_STR *)&buffer;
+    PACKET_STR *pMsg = (PACKET_STR*)&buffer;
 
     // strcpy(pMsg->str, "hello world1 hello world2 hello world3 hello world4 hello world5");
     strcpy(pMsg->str, buffer);
